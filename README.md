@@ -16,6 +16,7 @@ This app provides a redirection to remote web Url.And you have access to differe
     - `./scripts/` :
         - `app.js` : Our javascript file who contain all mechanics 
         - `vendor.min.js` : Your JavaScript dependencies
+- `images/` : Folder who contains all images sources. 
 
 ## Dependencies
 
