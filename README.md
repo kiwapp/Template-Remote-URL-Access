@@ -1,7 +1,9 @@
 Template_Remote_URL_Access
 ==========================
 
-This app provides a simple redirection to specific web Url allow differents screen positions and allow or not scrolling inside app. You could write this Url inside your manager in your App Config.
+This app provides a redirection to remote web Url.And you have access to differents options :   - `screen positions` : portrait or landscape.
+                                                                                                - `scrolling` : allow or not scrolling inside app.
+                                                                                                - `Url` : remote web Url.
 
 ## File organisation
 - `app/` : Folder who contains all application sources. 
@@ -25,10 +27,10 @@ This application is build on top of :
 
 This application is built on top of **Html Js and Kiwapp**, so it's working throught Ajax.
 
-You will find inside this repository :  - app/ : folder containing app sources
-                                        - images/ : folder containing images resources
-                                        - app.zip : zip file of content App folder, add this zip to your manager.
-                                        - images.zip : zip file of content image folder , like app.zip . 
+You will find inside this repository :  - `app/` : folder containing app sources
+                                        - `images/` : folder containing images resources
+                                        - `app.zip` : zip file of content App folder, add this zip to your manager.
+                                        - `images.zip` : zip file of content image folder , like app.zip . 
  
 ## Customize images
 
