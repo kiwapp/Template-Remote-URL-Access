@@ -23,12 +23,12 @@ This application is build on top of :
 
 ## About the application
 
-This application is built on top of **Html Js and Kiwapp**, so it's working throw Ajax.
+This application is built on top of **Html Js and Kiwapp**, so it's working throught Ajax.
 
-You will find inside this repository :  -app/ : folder containing app sources
-                                        -images/ : folder containing images resources
-                                        -app.zip : zip file of content App folder, add this zip to your manager.
-                                        -images.zip : zip file of content image folder , like upstaire. 
+You will find inside this repository :  - app/ : folder containing app sources
+                                        - images/ : folder containing images resources
+                                        - app.zip : zip file of content App folder, add this zip to your manager.
+                                        - images.zip : zip file of content image folder , like app.zip . 
  
 ## Customize images
 
