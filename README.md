@@ -1,9 +1,10 @@
 Template_Remote_URL_Access
 ==========================
 
-This app provides a redirection to remote web Url.And you have access to differents options :   - `screen positions` : portrait or landscape.
-                                                                                                - `scrolling` : allow or not scrolling inside app.
-                                                                                                - `Url` : remote web Url.
+This app provides a redirection to remote web Url.And you have access to differents options :   
+- `screen positions` : portrait or landscape.
+- `scrolling` : allow or not scrolling inside app.
+- `Url` : remote web Url.
 
 ## File organisation
 - `app/` : Folder who contains all application sources. 
