@@ -18,6 +18,19 @@ This app provides a redirection to remote web Url.And you have access to differe
         - `vendor.min.js` : Your JavaScript dependencies
 - `images/` : Folder who contains all images sources. 
 
+## Make it work
+
+First, you have to upload the app.zip file to the Kiwapp Retail Manager.  
+Once is done, some configuration is needed :
+
+- In the `apps`section, find your uploaded application.  
+- Then click on the gear and `edit your application`.  
+- Here you can upload resources binded to this application. Upload your `images`in an `images/`repository.  
+- Once you did, go to the `shops`section, and find your `App Set`.  
+- Click on the gear to the right of your application to `Setup app`.  
+- You have an interface to customize your own url redirection.
+- Click on `Ok` button
+- The setup is done ! Test your application downloading it on a device !
 ## Dependencies
 
 This application is build on top of :
@@ -30,7 +43,7 @@ This application is build on top of :
 This application is built on top of **Html Js and Kiwapp**, so it's working throught Ajax.
 
 You will find inside this repository :  - `app/` : folder containing app sources
-                                        - `images/` : folder containing images resources
+                                        - `images/` : folder containing images externale resources
                                         - `app.zip` : zip file of content App folder, add this zip to your manager.
                                         - `images.zip` : zip file of content image folder , like app.zip . 
  
