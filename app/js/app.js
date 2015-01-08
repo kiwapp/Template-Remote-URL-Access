@@ -1,5 +1,5 @@
 /**
- * This is where all begins
+ * The web app
  */
 (function(win, doc, App){
 
@@ -20,10 +20,11 @@
             Kiwapp.rotate(orientation);
             Kiwapp.scroll(scrollState);
             // load url
-            if(url!=="" && url !==undefined)
+            if(url!=="" && url !==undefined) {
                 window.location.replace(url);
-            else 
+            } else {
                 document.body.classList.add("no-Url")
+            }
         });
 
 })(window, window.document, window.app || (window.app = {}));

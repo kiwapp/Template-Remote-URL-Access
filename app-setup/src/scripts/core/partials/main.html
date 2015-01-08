@@ -1,0 +1,19 @@
+<form name="configForm">
+    <label for="url">Specify url to load. ( eg: http://google.com ) : </label>
+    <input type="text" id="url" ng-model="model.url"/><br/>
+    <label for="scroll">Enable scrolling : </label>
+    <input type="checkbox" id="scroll" ng-model="model.scroll"/><br/>
+    <label for="orientation">Select which orientation are allowed for your application : </label>
+    <select id="orientation" ng-model="model.orientation">
+        <option value="no">No Restriction</option>
+        <option value="portrait">Portrait</option>
+        <option value="landscape">Landscape</option>
+    </select>
+
+    <div class="bloc-valid">
+        <span class="config-info config-unsave" ng-if="configForm.$dirty">{{i18n.msg_unsaved}}</span>
+        <span class="config-info config-save" ng-if="!configForm.$dirty && configForm.subimtted">{{i18n.msg_saved}}</span>
+        <button type="button" ng-click="save()">{{i18n.btn_save}}</button>
+    </div>
+
+</form>
