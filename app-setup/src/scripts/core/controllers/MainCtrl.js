@@ -1,9 +1,15 @@
 'use strict';
 /*@ngInject*/
-module.exports = function ($scope, appInstanceDataApi) {
+module.exports = function ($scope, appInstanceDataApi, browserUtils, babelfish) {
 
     var keyAppInstanceData = "app-params-remote-url";
     $scope.model = {};
+
+    if(browserUtils.getParameterByName('lang')) {
+        // Init the languages settings with the value from the lang key in the url
+        babelfish.updateLang(browserUtils.getParameterByName('lang'));
+        babelfish.load();
+    }
 
     // Use JSON.stringify and parse, this will be prettify the JSON
     var dataAppInstance = appInstanceDataApi.get(keyAppInstanceData);
@@ -15,22 +21,9 @@ module.exports = function ($scope, appInstanceDataApi) {
      * Save the data
      */
     $scope.save = function() {
+
         $scope.configForm.subimtted = true;
         $scope.configForm.$setPristine();
         appInstanceDataApi.save(JSON.stringify($scope.model), keyAppInstanceData);
     };
-
-    /**
-     * Return true if the string is a valid JSON
-     * @param str
-     * @returns {boolean}
-     */
-    function isJsonString(str) {
-        try {
-            JSON.parse(str);
-        } catch (e) {
-            return false;
-        }
-        return true;
-    }
 };

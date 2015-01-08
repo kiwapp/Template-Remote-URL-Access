@@ -8,10 +8,9 @@ h1 {
     font-size: 1.2em;
 }
 
-form textarea {
-    width: 100%;
-    height: 500px;
-    border-color: rgba(243, 161, 69, 0.9);
+input[type="checkbox"] {
+    position: relative;
+    top:2px;
 }
 
 form button {
@@ -54,7 +53,7 @@ form button:disabled {
     background-repeat: no-repeat;
     background-position: 0 50%;
     position: relative;
-    top:2px;
+    top: 2px;
 }
 
 .config-save {

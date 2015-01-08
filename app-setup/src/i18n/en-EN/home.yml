@@ -2,3 +2,9 @@ btn_save: Save the configuration
 msg_saved: Configuration saved
 msg_unsaved: Configuration not saved
 msg_json_invalid: The JSON is not valid
+label_url: Specify url to load. ( eg: http://google.com ) :
+label_scroll: Enable scrolling
+label_orientation: Select which orientation are allowed for your application :
+value_no_orientation: No Restriction
+value_portrait: Portrait
+value_landscape: Landscape

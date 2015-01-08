@@ -20,6 +20,7 @@
     "validthis": true,
     "globals": {
         "angular": false,
-        "Kiwapp": false
+        "Kiwapp": false,
+        "alert": false
     }
 }
