@@ -1,4 +1,4 @@
 .idea/
 app/build/
-*.zip
+app/*.zip
 app/src/vendor/
