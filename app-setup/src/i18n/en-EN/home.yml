@@ -1,0 +1,9 @@
+btn_save: Save the setup
+msg_saved: Setup is saved
+msg_unsaved: Setup is not saved
+label_url: Enter the website page url you wish to display (eg: https://www.kiwapp.com):
+label_scroll: Enable scrolling on this page
+label_orientation: Select the screen orientation for your devices:
+value_no_orientation: No specific orientation
+value_portrait: Portrait
+value_landscape: Landscape

@@ -1,7 +1,11 @@
 Template_Remote_URL_Access
 ==========================
 
-This app provides a redirection to remote web Url.And you have access to differents options:   
+# Use this application
+Download the zip file and upload it in the manager interface
+
+## Configuration
+This app provides a redirection to remote web Url.And you have access to different options:   
 - `screen positions` : portrait or landscape
 - `scrolling` : allow or not scrolling inside app
 - `Url` : remote web Url
@@ -31,6 +35,7 @@ Once is done, some configuration is needed :
 - You have an interface to customize your own url redirection.
 - Click on `Ok` button
 - The setup is done ! Test your application downloading it on a device !
+
 ## Dependencies
 
 This application is build on top of :

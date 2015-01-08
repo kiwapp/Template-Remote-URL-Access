@@ -1,0 +1,28 @@
+<form name="configForm">
+
+    <div class="form-group">
+        <label for="url">{{i18n.label_url}}</label>
+        <input type="text" id="url" ng-model="model.url" class="form-control"/><br/>
+    </div>
+    <div class="form-group">
+        <label for="orientation">{{i18n.label_orientation}}</label>
+        <select id="orientation" ng-model="model.orientation" class="form-control">
+            <option value="no">{{i18n.value_no_orientation}}</option>
+            <option value="portrait">{{i18n.value_portrait}}</option>
+            <option value="landscape">{{i18n.value_landscape}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="scroll">
+            <input type="checkbox" checked="checked" id="scroll" ng-model="model.scroll"> {{i18n.label_scroll}}
+        </label>
+    </div>
+
+    <div class="bloc-valid">
+        <span class="config-info config-unsave" ng-if="configForm.$dirty">{{i18n.msg_unsaved}}</span>
+        <span class="config-info config-save"
+              ng-if="!configForm.$dirty && configForm.subimtted">{{i18n.msg_saved}}</span>
+        <button type="button" ng-click="save()">{{i18n.btn_save}}</button>
+    </div>
+
+</form>
