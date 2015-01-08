@@ -1,10 +1,9 @@
 btn_save: Sauvegarder la configuration
 msg_saved: La configuration est sauvegardée
 msg_unsaved: La configuration n'est pas sauvegardée
-msg_json_invalid: Le JSON est invalide
-label_url: Choisissez une url a charger. ( exemple: https://www.google.fr ) :
-label_scroll: Activer le scroll
-label_orientation: Choisissez l'orientation de l'écran :
-value_no_orientation: Pas d'orientation spécifique
+label_url: Entrez l'url de la page web que vous souhaitez afficher (exemple: https://www.kiwapp.com) :
+label_scroll: Autoriser le scroll sur la page
+label_orientation: Sélectionez l'orientation de l'écran de vos appareils :
+value_no_orientation: Aucune orientation spécifique
 value_portrait: Portrait
 value_landscape: Paysage

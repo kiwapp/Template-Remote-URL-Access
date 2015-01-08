@@ -1,10 +1,9 @@
-btn_save: Save the configuration
-msg_saved: Configuration saved
-msg_unsaved: Configuration not saved
-msg_json_invalid: The JSON is not valid
-label_url: Specify url to load. ( eg: http://google.com ) :
-label_scroll: Enable scrolling
-label_orientation: Select which orientation are allowed for your application :
-value_no_orientation: No Restriction
+btn_save: Save the setup
+msg_saved: Setup is saved
+msg_unsaved: Setup is not saved
+label_url: Enter the website page url you wish to display (eg: https://www.kiwapp.com):
+label_scroll: Enable scrolling on this page
+label_orientation: Select the screen orientation for your devices:
+value_no_orientation: No specific orientation
 value_portrait: Portrait
 value_landscape: Landscape
