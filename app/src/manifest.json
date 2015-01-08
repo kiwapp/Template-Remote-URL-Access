@@ -1,10 +1,10 @@
 {
   "app_info": {
-    "name": "Favorite WebSite",
+    "name": "WebSite",
     "author": "Kiwapp",
     "codename": "1.0.0",
     "author_email": "contact@kiwapp.com",
-    "description": "Open a favorite website"
+    "description": "Utilisez ce modèle pour afficher sur votre tablette ou smartphone un raccourci vers une page web. Créez votre application site web en quelques minutes !"
   },
   "config": {
     "typedef": {},

@@ -3,7 +3,6 @@
 module.exports = function ($scope, appInstanceDataApi, browserUtils, babelfish) {
 
     var keyAppInstanceData = "app-params-remote-url";
-    $scope.model = {};
 
     if(browserUtils.getParameterByName('lang')) {
         // Init the languages settings with the value from the lang key in the url
@@ -15,6 +14,10 @@ module.exports = function ($scope, appInstanceDataApi, browserUtils, babelfish) 
     var dataAppInstance = appInstanceDataApi.get(keyAppInstanceData);
     if(dataAppInstance !== undefined && appInstanceDataApi.get(keyAppInstanceData).data !== "") {
         $scope.model = JSON.parse(appInstanceDataApi.get(keyAppInstanceData).data);
+    } else {
+        $scope.model = {
+            scroll: true
+        };
     }
 
     /**
