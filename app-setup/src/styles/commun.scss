@@ -13,12 +13,12 @@ input[type="checkbox"] {
     top:2px;
 }
 
-input.ng-invalid {
+.validated input.ng-invalid, input.ng-dirty.ng-invalid{
     color: #b94a48;
     border: 1px solid #b94a48;
 }
 
-input.ng-invalid:focus {
+.validated input.ng-invalid:focus, input.ng-dirty.ng-invalid:focus{
     border: 1px solid red;
     box-shadow: 0px 0px 3px #b94a48;
 }

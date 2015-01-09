@@ -35,6 +35,7 @@ var jsVendors = [
     project + 'src/vendor/angular-touch/angular-touch.min.js',
     project + 'src/vendor/angular-ui-router/release/angular-ui-router.min.js',
     project + 'src/vendor/moment/moment.js',
+    project + 'src/vendor/jquery/dist/jquery.min.js',
     project + 'src/vendor/KiwappAPI_AccessLib/dist/bundle.min.js',
     project + 'src/vendor/pace/pace.min.js',
     project + 'src/vendor/ngBabelfish/dist/bundle.js'

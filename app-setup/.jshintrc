@@ -21,6 +21,7 @@
     "globals": {
         "angular": false,
         "Kiwapp": false,
-        "alert": false
+        "alert": false,
+        "$": false
     }
 }

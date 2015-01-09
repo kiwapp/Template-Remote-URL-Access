@@ -1,8 +1,8 @@
-btn_save: Enregistrer la configuration
+btn_save: Enregistrer
 msg_saved: La configuration est sauvegardée
 msg_unsaved: La configuration n'est pas sauvegardée
 label_url: Entrez l'url de la page web que vous souhaitez afficher (exemple: https://www.kiwapp.com) :
-label_scroll: Autoriser le scroll sur la page
+label_scroll: Autoriser le scroll sur la page (Fonctionnalité uniquement sur iOS)
 label_orientation: Sélectionnez l'orientation de l'écran de vos appareils :
 value_no_orientation: Aucune orientation spécifique
 value_portrait: Portrait

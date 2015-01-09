@@ -25,6 +25,15 @@ module.exports = function ($scope, appInstanceDataApi, browserUtils, babelfish) 
      * Save the data
      */
     $scope.save = function() {
+        $scope.saveClicked = true;
+        // If the form is invalid stop the process
+        if($scope.configForm.$invalid) {
+            // Scroll to the first element in error
+            var firstError = $('input.ng-invalid')[0];
+            firstError.focus();
+
+            return;
+        }
 
         $scope.configForm.subimtted = true;
         $scope.configForm.$setPristine();

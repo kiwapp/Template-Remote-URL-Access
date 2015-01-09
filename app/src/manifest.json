@@ -4,7 +4,7 @@
     "author": "Kiwapp",
     "codename": "1.0.0",
     "author_email": "contact@kiwapp.com",
-    "description": "Utilisez ce modèle pour afficher sur votre appareil un raccourci vers une page web. Créez votre application site web en quelques instants !"
+    "description": "Utilisez ce modèle pour afficher sur votre appareil un raccourci vers une page web."
   },
   "config": {
     "typedef": {},

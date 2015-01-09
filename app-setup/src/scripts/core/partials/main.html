@@ -1,6 +1,5 @@
 <form name="configForm">
-
-    <div class="form-group">
+    <div class="form-group" ng-class="{'validated': saveClicked}">
         <label for="url">{{i18n.label_url}}</label>
         <input type="url" id="url" ng-model="model.url" class="form-control" pattern="https?://.+" required/><br/>
     </div>
@@ -21,7 +20,7 @@
     <div class="bloc-valid">
         <span class="config-info config-unsave" ng-if="configForm.$dirty">{{i18n.msg_unsaved}}</span>
         <span class="config-info config-save" ng-if="!configForm.$dirty && configForm.subimtted">{{i18n.msg_saved}}</span>
-        <button type="button" ng-click="save()" ng-disabled="configForm.$invalid">{{i18n.btn_save}}</button>
+        <button type="button" ng-click="save()">{{i18n.btn_save}}</button>
     </div>
 
 </form>
