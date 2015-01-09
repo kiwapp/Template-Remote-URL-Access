@@ -16,7 +16,8 @@ module.exports = function ($scope, appInstanceDataApi, browserUtils, babelfish) 
         $scope.model = JSON.parse(appInstanceDataApi.get(keyAppInstanceData).data);
     } else {
         $scope.model = {
-            scroll: true
+            scroll: true,
+            orientation: "no"
         };
     }
 
