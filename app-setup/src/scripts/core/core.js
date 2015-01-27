@@ -30,5 +30,13 @@ angular.module('kiwappSetup', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngBabelfis
             lazy: false
         });
     })
+    .run(function(babelfish, browserUtils){
+        'use strict';
+        if(browserUtils.getParameterByName('lang')) {
+            // Init the languages settings with the value from the lang key in the url
+            babelfish.updateLang(browserUtils.getParameterByName('lang').replace('_', '-'));
+            babelfish.load();
+        }
+    })
 ;
 
