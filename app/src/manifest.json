@@ -1,8 +1,8 @@
 {
   "app_info": {
-    "name": "Website By Kiwapp",
+    "name": "Bookmark",
     "author": "Kiwapp",
-    "codename": "1.0.0",
+    "codename": "1.1.0",
     "author_email": "contact@kiwapp.com",
     "description": "Utilisez ce modèle pour afficher sur votre appareil un raccourci vers une page web."
   },

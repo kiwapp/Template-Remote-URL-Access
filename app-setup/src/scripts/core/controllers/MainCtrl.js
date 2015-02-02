@@ -1,14 +1,8 @@
 'use strict';
 /*@ngInject*/
-module.exports = function ($scope, appInstanceDataApi, browserUtils, babelfish) {
+module.exports = function ($scope, appInstanceDataApi) {
 
     var keyAppInstanceData = "app-params-remote-url";
-
-    if(browserUtils.getParameterByName('lang')) {
-        // Init the languages settings with the value from the lang key in the url
-        babelfish.updateLang(browserUtils.getParameterByName('lang'));
-        babelfish.load();
-    }
 
     // Use JSON.stringify and parse, this will be prettify the JSON
     var dataAppInstance = appInstanceDataApi.get(keyAppInstanceData);

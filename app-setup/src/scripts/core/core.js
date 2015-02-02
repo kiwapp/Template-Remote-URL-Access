@@ -3,7 +3,7 @@ require('../helpers/helpers');
 angular.module('kiwappSetup', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngBabelfish', 'ui.router', 'kiwapp.api', 'helpers'])
     .controller('MainCtrl', require('./controllers/MainCtrl'))
     .factory('AppInstanceFactory', require('./factory/appInstanceFactory'))
-    .config(function ($stateProvider, $urlRouterProvider, babelfishProvider) {
+    .config(function ($stateProvider, $urlRouterProvider, babelfishProvider, browserUtilsProvider) {
         'use strict';
 
         $stateProvider
@@ -24,7 +24,7 @@ angular.module('kiwappSetup', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ngBabelfis
         // Init the babelfish module for the translation
         babelfishProvider.init({
             state: "home",
-            lang: "fr-FR",
+            lang: browserUtilsProvider.getParameterByName('lang').replace('_', '-').replace('/', '').replace('#', ''),
             url: "i18n/languages.json",
             namespace: "i18n",
             lazy: false

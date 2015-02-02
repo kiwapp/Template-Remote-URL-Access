@@ -3,4 +3,4 @@
  * Provide some helper to your application
  */
 angular.module('helpers', [])
-    .service('browserUtils', require('./services/browserUtils'));
+    .provider('browserUtils', require('./provider/browserUtils'));

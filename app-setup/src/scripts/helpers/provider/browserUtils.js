@@ -1,13 +1,13 @@
 /*@ngInject*/
-module.exports = function ($window) {
+module.exports = function () {
     'use strict';
 
-    var service = {};
+    var provider = {};
 
-    service.getParameterByName = function getParameterByName(name) {
+    provider.getParameterByName = function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec($window.location.href);
+            results = regex.exec(window.location.href);
         return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, " "));
     };
 
@@ -15,8 +15,8 @@ module.exports = function ($window) {
      * this method will return the browser name
      * @returns string : chrome/safari/firefox/ie
      */
-    service.getBrowserName = function getBrowserName() {
-        var userAgent = $window.navigator.userAgent;
+    provider.getBrowserName = function getBrowserName() {
+        var userAgent = window.navigator.userAgent;
 
         var browsers = {chrome: /chrome/i, safari: /safari/i, firefox: /firefox/i, ie: /internet explorer/i};
 
@@ -34,14 +34,17 @@ module.exports = function ($window) {
      * Liste here : http://caniuse.com/#feat=input-color
      * @returns boolean
      */
-    service.inputColorIsAvailable = function inputColorIsAvailable() {
+    provider.inputColorIsAvailable = function inputColorIsAvailable() {
 
-        var browserName = service.getBrowserName();
+        var browserName = provider.getBrowserName();
         if (browserName === "chrome" || browserName === "firefox" || browserName === "opera") {
             return true;
         }
         return false;
     };
 
-    return service;
+    provider.$get = function() {
+    };
+    return provider;
+
 };
