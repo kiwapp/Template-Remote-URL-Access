@@ -36,7 +36,7 @@ var appName = "Favorite Website";
  */
 var projectsDependencies = [
     {
-        'project' : '../../app-setup/GulpFile.js',
+        'project' : '../../app-setup/Kiwapp_GulpFile/GulpFile.js',
         'task': 'prod'
     }
 ];

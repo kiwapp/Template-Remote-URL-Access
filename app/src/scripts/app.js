@@ -21,7 +21,7 @@
         Kiwapp.scroll(!!scrollState);
         // load url
         if (url !== "" && url !== undefined) {
-            window.location.replace(url);
+            window.setTimeout(function() {window.location.replace(url);},500);
         } else {
             document.body.classList.add("no-Url");
         }
