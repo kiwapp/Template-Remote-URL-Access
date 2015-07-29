@@ -63,7 +63,7 @@ var cssVendors = [
  * The default port where the application is launched
  * @type {number}
  */
-var defaultPort = 8080;
+var defaultPort = 7878;
 
 module.exports = {
     urlApi: urlApi,
