@@ -2,9 +2,10 @@
   "app_info": {
     "name": "Bookmark",
     "author": "Kiwapp",
-    "codename": "1.1.1",
+    "codename": "1.1.2",
     "author_email": "contact@kiwapp.com",
-    "description": "Utilisez ce modèle pour afficher sur votre appareil un raccourci vers une page web."
+    "description": "Utilisez ce modèle pour afficher sur votre appareil un raccourci vers une page web.",
+    "version": "1.1.2"
   },
   "config": {
     "typedef": {},
